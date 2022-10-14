@@ -8,10 +8,10 @@ export class AppComponent {
   public appPages = [
     { title: 'Home', url: '', icon: 'home' },
     { title: 'Rutina', url: '/rutina', icon: 'barbell' },
-    { title: 'Progreso', url: '/folder/Favorites', icon: 'checkmark-done' },
-    { title: 'Avisos', url: '/folder/Archived', icon: 'information' },
-    { title: 'Ajustes', url: '/folder/Trash', icon: 'settings' },
-    { title: 'Login', url: '/folder/Spam', icon: 'finger-print' },
+    { title: 'Progreso', url: '/progreso', icon: 'checkmark-done' },
+    { title: 'Avisos', url: '/avisos', icon: 'information' },
+    { title: 'Ajustes', url: '/ajustes', icon: 'settings' },
+    { title: 'Login', url: '/login', icon: 'finger-print' },
   ];
 
 

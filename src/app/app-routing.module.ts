@@ -10,7 +10,23 @@ const routes: Routes = [
   {
     path: 'rutina',
     loadChildren: () => import('./public/pages/rutina/rutina.module').then( m => m.RutinaPageModule)
+  },  {
+    path: 'progreso',
+    loadChildren: () => import('./public/pages/progreso/progreso.module').then( m => m.ProgresoPageModule)
   },
+  {
+    path: 'avisos',
+    loadChildren: () => import('./public/pages/avisos/avisos.module').then( m => m.AvisosPageModule)
+  },
+  {
+    path: 'ajustes',
+    loadChildren: () => import('./public/pages/ajustes/ajustes.module').then( m => m.AjustesPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./public/pages/login/login.module').then( m => m.LoginPageModule)
+  },
+
 
 ];
 
