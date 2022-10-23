@@ -7,7 +7,8 @@ const routes: Routes = [
   {
     path: '',
     component: RutinaPage
-  },  {
+  },
+  {
     path: 'lunes',
     loadChildren: () => import('./lunes/lunes.module').then( m => m.LunesPageModule)
   },

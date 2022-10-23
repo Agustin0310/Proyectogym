@@ -17,4 +17,5 @@ import { LunesPage } from './lunes.page';
   ],
   declarations: [LunesPage]
 })
-export class LunesPageModule {}
+export class LunesPageModule {
+}
