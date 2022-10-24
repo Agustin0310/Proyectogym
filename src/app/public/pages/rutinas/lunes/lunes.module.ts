@@ -6,7 +6,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { LunesPageRoutingModule } from './lunes-routing.module';
 
-import { LunesPage } from './lunes.page';
+import { LunesPage, MartesPage } from './lunes.page';
 
 @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import { LunesPage } from './lunes.page';
     IonicModule,
     LunesPageRoutingModule
   ],
-  declarations: [LunesPage]
+  declarations: [LunesPage],
 })
 export class LunesPageModule {
 }
