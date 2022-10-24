@@ -2,68 +2,8 @@
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
+      <ion-title style="font-family:Poppins">Home</ion-title>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title style="font-family:Poppins; font-size: 30px;">Novedades</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-infinite-scroll  threshold="25%" (ionInfinite)="loadData($event)">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <ion-infinite-scroll-content 
-      loadingSpinner="bubbles"
-      loadingText="Loading...">
-
-      <ion-card style="font-family: Poppins;">
-        <img src="https://thedailysem.com/wp-content/uploads/2021/12/llados-fitness-net-worth.png" />
-        <ion-card-header>
-          <ion-card-subtitle>Llados</ion-card-subtitle>
-          <ion-card-title>Nuevo profesor incorporado al gimnasio!</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          Llados se suma al equipo de GymApp este lunes 12 de septiembre
-        </ion-card-content>
-      </ion-card>
-
-
-      <ion-card style="font-family: Poppins;">
-        <img src="https://face.unt.edu.ar/web/wp-content/uploads/2021/02/calendario.jpg" />
-        <ion-card-header>
-          <ion-card-title>Nuevos avisos</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>Encontrá información sobre los nuevos avisos del gimnasio </ion-card-content>
-      </ion-card>
-
-
-      <ion-card style="font-family: Poppins;">
-        <img src="https://aldiaargentina.microjuris.com/wp-content/uploads/2015/12/aumentos.jpg" />
-        <ion-card-header>
-          <ion-card-subtitle>Cuota</ion-card-subtitle>
-          <ion-card-title>La cuota mensual aumentará un 25%</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          Debido a la devaluación, estamos obligados a tomar estas medidas
-        </ion-card-content>
-      </ion-card>
-
-
-      <ion-card style="font-family: Poppins;">
-        <img src="https://phantom-marca-us.unidadeditorial.es/30f2929c76149972c701eb069fd68c52/resize/1320/f/jpg/assets/multimedia/imagenes/2022/03/23/16480550116505.jpg" />
-        <ion-card-header>
-          <ion-card-subtitle>Boxeo</ion-card-subtitle>
-          <ion-card-title>Incorporamos clases de boxeo!</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          A partir de el mes de octubre vas a poder inscribirte en las clases de boxeo que brinda nuestro gimnasio
-        </ion-card-content>
-      </ion-card>
-
-
-    </ion-infinite-scroll-content>
-  </ion-infinite-scroll>
-  
-</ion-content>
