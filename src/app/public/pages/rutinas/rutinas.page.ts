@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-rutina',
-  templateUrl: './rutina.page.html',
-  styleUrls: ['./rutina.page.scss'],
+  selector: 'app-rutinas',
+  templateUrl: './rutinas.page.html',
+  styleUrls: ['./rutinas.page.scss'],
 })
-export class RutinaPage implements OnInit {
+export class RutinasPage implements OnInit {
 
   constructor(private router:Router) { }
 

@@ -8,9 +8,10 @@ const routes: Routes = [
     loadChildren: () => import('./public/pages/home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'rutina',
-    loadChildren: () => import('./public/pages/rutina/rutina.module').then( m => m.RutinaPageModule)
-  },  {
+    path: 'rutinas',
+    loadChildren: () => import('./public/pages/rutinas/rutinas.module').then( m => m.RutinasPageModule)
+  },
+  {
     path: 'progreso',
     loadChildren: () => import('./public/pages/progreso/progreso.module').then( m => m.ProgresoPageModule)
   },
