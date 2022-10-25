@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: ':dia',
-    loadChildren: () => import('./lunes/lunes.module').then( m => m.LunesPageModule)
+    loadChildren: () => import('./dias/dias.module').then( m => m.DiasPageModule)
   },
 
 ];
