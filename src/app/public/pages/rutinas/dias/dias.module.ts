@@ -4,18 +4,18 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { LunesPageRoutingModule } from './lunes-routing.module';
+import { DiasPageRoutingModule } from './dias-routing.module';
 
-import { LunesPage, MartesPage } from './lunes.page';
+import { DiasPage } from './dias.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LunesPageRoutingModule
+    DiasPageRoutingModule
   ],
-  declarations: [LunesPage],
+  declarations: [DiasPage],
 })
-export class LunesPageModule {
+export class DiasPageModule {
 }
