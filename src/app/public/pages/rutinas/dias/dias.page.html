@@ -7,3 +7,54 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-card style="font-family: Poppins;">
+    <ion-card-header>
+      <ion-card-title style="font-size: 18px;font-family: Poppins;">SERIE 1</ion-card-title>
+      <ion-card-subtitle style="font-size: 15px;font-family: Poppins;">x3</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-chip style="font-family: Poppins;" color="tertiary">Cuadriceps</ion-chip>
+      <ion-chip style="font-family: Poppins;" color="tertiary">Isquiotibiales</ion-chip>
+      <ion-chip style="font-family: Poppins;" color="tertiary">Gemelos</ion-chip>
+      <ion-list>
+        <ion-item>
+          <ion-label style="font-size: 17px;font-family: Poppins;">Sentadilla x20</ion-label>
+          <ion-item>
+            <ion-checkbox slot="start"></ion-checkbox>
+            <ion-item fill="solid">
+              <ion-input type="number" step="any" placeholder="Kg"></ion-input>
+              <ion-note slot="error">Valor invalido</ion-note>
+            </ion-item>
+          </ion-item>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label style="font-size: 17px;font-family: Poppins;">Curl Nordico x8</ion-label>
+          <ion-item>
+            <ion-checkbox slot="start"></ion-checkbox>
+            <ion-item fill="solid">
+              <ion-input type="number" step="any" placeholder="Kg"></ion-input>
+              <ion-note slot="error">Valor invalido</ion-note>
+            </ion-item>
+          </ion-item>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label style="font-size: 17px;font-family: Poppins;">Elevación del talón a una pierna</ion-label>
+          <ion-item>
+            <ion-checkbox slot="start"></ion-checkbox>
+            <ion-item fill="solid">
+              <ion-input type="number" step="any" placeholder="Kg"></ion-input>
+              <ion-note slot="error">Valor invalido</ion-note>
+            </ion-item>
+          </ion-item>
+        </ion-item>
+
+      </ion-list>
+      <ion-button fill="outline">HECHO</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
