@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouteConfigLoadEnd } from '@angular/router';
+import { ActivatedRoute, RouteConfigLoadEnd, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-dias',
@@ -12,8 +12,16 @@ export class DiasPage implements OnInit {
 
   ngOnInit() {
     this.ar.params.subscribe (
-      (route) => console.log(route)
-    )
+      (route) => {
+        if(route = ['lunes'])
+        {
+          console.log('jaja')
+        }
+
+        console.log(route)
+      }
+    
+      )
     
   }
 }

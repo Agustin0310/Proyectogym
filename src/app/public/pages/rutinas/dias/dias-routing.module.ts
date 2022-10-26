@@ -10,6 +10,9 @@ const routes: Routes = [
   component: DiasPage
   },
 
+
+
+
 ];
 
 @NgModule({

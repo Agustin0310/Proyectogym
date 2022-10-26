@@ -17,3 +17,4 @@ export class RutinasPage implements OnInit {
   ngOnInit() {
   }
 }
+
