@@ -10,20 +10,20 @@
 
 <ion-content [fullscreen]="true">
   
-  <ion-card style="font-family: Poppins;">
+  <ion-card style="font-family: Poppins;" *ngFor="let tarjeta of tarjetas">
     <ion-card-header>
       <ion-card-title style="font-size: 18px;font-family: Poppins;">SERIE 1</ion-card-title>
       <ion-card-subtitle style="font-size: 15px;font-family: Poppins;">x3</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
-      <ion-chip style="font-family: Poppins;" color="tertiary">Cuadriceps</ion-chip>
-      <ion-chip style="font-family: Poppins;" color="tertiary">Isquiotibiales</ion-chip>
-      <ion-chip style="font-family: Poppins;" color="tertiary">Gemelos</ion-chip>
-      <ion-list>
+      <ion-chip style="font-family: Poppins;" color="tertiary" *ngFor="let musculo of tarjeta.musculos">{{musculo}}</ion-chip>
+      <!-- <ion-chip style="font-family: Poppins;" color="tertiary">Isquiotibiales</ion-chip> -->
+      <!-- <ion-chip style="font-family: Poppins;" color="tertiary">Gemelos</ion-chip> -->
+      <ion-list *ngFor="let ejercicio of tarjeta.ejercicios">
         <ion-item>
-          <ion-label style="font-size: 17px;font-family: Poppins;">Sentadilla x20</ion-label>
+          <ion-label style="font-size: 17px;font-family: Poppins;">{{ejercicio.nombre}} x{{ejercicio.repeticiones}}</ion-label>
           <ion-item>
-            <ion-checkbox slot="start"></ion-checkbox>
+            <ion-checkbox slot="start" [checked]="ejercicio.hecho"></ion-checkbox>
             <ion-item fill="solid">
               <ion-input type="number" step="any" placeholder="Kg"></ion-input>
               <ion-note slot="error">Valor invalido</ion-note>
@@ -31,7 +31,7 @@
           </ion-item>
         </ion-item>
   
-        <ion-item>
+        <!-- <ion-item>
           <ion-label style="font-size: 17px;font-family: Poppins;">Curl Nordico x8</ion-label>
           <ion-item>
             <ion-checkbox slot="start"></ion-checkbox>
@@ -51,7 +51,7 @@
               <ion-note slot="error">Valor invalido</ion-note>
             </ion-item>
           </ion-item>
-        </ion-item>
+        </ion-item> -->
 
       </ion-list>
       <ion-button fill="outline">HECHO</ion-button>
