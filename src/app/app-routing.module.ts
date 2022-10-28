@@ -12,10 +12,6 @@ const routes: Routes = [
     loadChildren: () => import('./public/pages/rutinas/rutinas.module').then( m => m.RutinasPageModule)
   },
   {
-    path: 'progreso',
-    loadChildren: () => import('./public/pages/progreso/progreso.module').then( m => m.ProgresoPageModule)
-  },
-  {
     path: 'avisos',
     loadChildren: () => import('./public/pages/avisos/avisos.module').then( m => m.AvisosPageModule)
   },
@@ -26,7 +22,8 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./public/pages/login/login.module').then( m => m.LoginPageModule)
-  },  {
+  },
+  {
     path: 'signin',
     loadChildren: () => import('./public/pages/signin/signin.module').then( m => m.SigninPageModule)
   },
