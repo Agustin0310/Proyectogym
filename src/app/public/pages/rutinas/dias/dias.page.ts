@@ -50,10 +50,18 @@ export class DiasPage implements OnInit {
         {
           console.log('jaja')
         }
+        if(route.dia === 'martes')
+        {
+          console.log('jaja')
+        }
+
 
         console.log(route)
       }
-    
+      
+
+
+
       )
     
   }
