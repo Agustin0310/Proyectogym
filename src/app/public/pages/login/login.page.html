@@ -13,23 +13,46 @@
   <img style="width: 100%; height:30%; padding-left:5%; padding-right:5%; padding-left:5%; margin-top: 6%;" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/workout-gym-weight-training-bodybuilding-royalty-free-image-1589467772.jpg">
 
   <ion-list role="article" style="margin-top: 5%;">
-    <ion-item style="margin-right: 8%;">
-      <ion-input placeholder="Correo" style="font-family:Poppins"></ion-input>
+    <ion-item style="text-align: center;">
+      <ion-input placeholder="Correo" style="font-family:Poppins; " ></ion-input>
     </ion-item>
   
-    <ion-item style="margin-right: 8%;">
-      <ion-input placeholder="Contraseña" style="font-family:Poppins"></ion-input>
+    <ion-item style="text-align: center;" >
+      <ion-input placeholder="Contraseña" style="font-family:Poppins; "></ion-input>
     </ion-item>
 
-    <ion-button style="margin-left: 40%; margin-right:40%; margin-top: 4%; font-family:Poppins" color="medium" fill="outline" >Ingresar</ion-button>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="10" offset="1">
+
+          <ion-button class="btn2" color="tertiary" expand="full" shape="round" >
+            <ion-icon name="log-in-outline" slot="end"></ion-icon>
+
+            Ingresar    
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    
   </ion-list>
 
   <ion-card-header>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <ion-card-title style="font-size: 18px;font-family: Poppins;">¿Aún no tienes cuenta?</ion-card-title>
+    <ion-card-title style="font-size: 18px;font-family: Poppins;text-align: center; font-weight: bolder;">¿Aún no tienes cuenta?</ion-card-title>
   </ion-card-header>
 
-  <ion-button style="margin-left: 40%; margin-right:40%; margin-top: 4%; font-family:Poppins" color="medium" fill="outline">Registrarse</ion-button>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="10" offset="1">
+
+        <ion-button class="btn2" color="tertiary" expand="full" shape="round" fill="outline" >
+          <ion-icon name="log-out-outline" slot="end"></ion-icon>
+          Registrarse
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
  
 </ion-content>
 
