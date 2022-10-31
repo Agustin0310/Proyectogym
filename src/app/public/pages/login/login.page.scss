@@ -1,3 +1,30 @@
-centrado{
-    text-align: center;
+.btn2{
+    height: 65px;
 }
+ion-content{
+    --ion-background-color:#fff;
+}
+
+ion-toolbar{
+    --background:#fff
+}
+
+
+#header{
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+
+    img{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        border: 2px solid #000000;
+    }
+
+
+}
+
+
