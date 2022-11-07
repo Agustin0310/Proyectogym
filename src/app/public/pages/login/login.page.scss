@@ -1,13 +1,49 @@
 .btn2{
     height: 65px;
 }
+
+/*
 ion-content{
-    --ion-background-color:#fff;
+    background: linear-gradient(to bottom, #000000,#fff) ;
 }
+*/
+
+
 
 ion-toolbar{
     --background:#fff
 }
+
+
+
+.backgroundgrad{
+
+    --background: linear-gradient(to top, #060007,#fff) ;
+}
+
+
+
+ 
+/* FONDO CON IMAGEN
+.backgroundimg{
+   
+    
+    --background: url("./../../../../assets/img/musculoso5.png")0 0/100% 100% no-repeat ;
+    background-size: cover;
+    background-position: center;
+    margin:auto;
+
+
+}
+*/
+
+/* CAMBIA COLOR PLACEHOLDER*/
+ion-input{
+    --placeholder-color:white;
+    --placeholder-opacity: 1;
+}
+
+
 
 
 #header{
@@ -21,7 +57,7 @@ ion-toolbar{
         width: 130px;
         height: 130px;
         border-radius: 50%;
-        border: 2px solid #000000;
+        border: 0px solid #000000;
     }
 
 

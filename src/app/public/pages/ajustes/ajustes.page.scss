@@ -4,11 +4,36 @@
     color: white;
     
 }
+/*
 ion-content{
     --ion-background-color:#fff;
 }
+*/
 ion-toolbar{
     --background:#fff
 }
 
+
+.backgroundgrad2{
+
+    --background: linear-gradient(to left, #060007,#fff) ;
+}
+
+
+/*FONDO CON IMAGEN
+
+.backgroundimg2{
+    --background: url("./../../../../assets/img/musculoso4.jpg") 0 0/100% 100% no-repeat;
+   
+    
+}
+
+*/
+
+/* CAMBIA COLOR PLACEHOLDER*/
+ion-input{
+    --placeholder-color:white;
+    --placeholder-opacity: 1;
+}
+ 
 
