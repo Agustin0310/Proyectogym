@@ -1,5 +1,6 @@
 .btn2{
     height: 65px;
+    color: #fff;
 }
 
 /*
@@ -18,7 +19,7 @@ ion-toolbar{
 
 .backgroundgrad{
 
-    --background: linear-gradient(to top, rgb(228, 89, 3),#fff) ;
+    --background: linear-gradient(to top, rgb(102, 0, 254),#fff) ;
 }
 
 
@@ -43,7 +44,7 @@ ion-input{
     --placeholder-opacity: 1;
 
      
-    border-radius: 40px !important;
+    border-radius: 0px !important;
     padding-right: 30px;
     text-align: center;
     font-size: 1em;
