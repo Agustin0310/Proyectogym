@@ -11,14 +11,14 @@ ion-content{
 
 
 ion-toolbar{
-    --background:#fff
+    --background:auto;
 }
 
 
 
 .backgroundgrad{
 
-    --background: linear-gradient(to top, #060007,#fff) ;
+    --background: linear-gradient(to top, rgb(228, 89, 3),#fff) ;
 }
 
 
@@ -41,6 +41,23 @@ ion-toolbar{
 ion-input{
     --placeholder-color:white;
     --placeholder-opacity: 1;
+
+     
+    border-radius: 40px !important;
+    padding-right: 30px;
+    text-align: center;
+    font-size: 1em;
+    border: 1px solid #ffffff !important;
+    --background: transparent !important;
+    max-width: 40vw ; 
+    max-height: 10vh;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+  
+    
+    
 }
 
 
