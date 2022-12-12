@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouteConfigLoadEnd, RouterLink } from '@angular/router';
+import { EjerciciosService } from 'src/app/core/ejercicios.service';
 
 @Component({
   selector: 'app-dias',
@@ -8,7 +9,7 @@ import { ActivatedRoute, RouteConfigLoadEnd, RouterLink } from '@angular/router'
 })
 export class DiasPage implements OnInit {
 
-  constructor(private ar:ActivatedRoute) { }
+  constructor(private ar:ActivatedRoute, private ejerciciosS:EjerciciosService ) { }
 
   tarjetas = [
     {
@@ -44,6 +45,9 @@ export class DiasPage implements OnInit {
   ]
 
   ngOnInit() {
+
+    this.getRutinas()
+
     this.ar.params.subscribe (
       (route) => {
         if(route.dia === 'lunes')
@@ -55,8 +59,8 @@ export class DiasPage implements OnInit {
           console.log('jaja')
         }
 
-
         console.log(route)
+
       }
       
 
@@ -65,6 +69,9 @@ export class DiasPage implements OnInit {
       )
     
   }
+
+  async getRutinas(){
+    await this.ejerciciosS.getAll()
+  }
+
 }
-
-
