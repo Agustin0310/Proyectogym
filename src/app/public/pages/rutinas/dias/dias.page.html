@@ -16,14 +16,14 @@
       <ion-card-subtitle style="font-size: 15px;font-family: Poppins;">x3</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
-      <ion-chip style="font-family: Poppins;" color="tertiary" *ngFor="let musculo of tarjeta.musculos">{{musculo}}</ion-chip>
+      <ion-chip style="font-family: Poppins;" color="tertiary">{{tarjeta.ejercicios[0].musculo}}</ion-chip>
       <!-- <ion-chip style="font-family: Poppins;" color="tertiary">Isquiotibiales</ion-chip> -->
       <!-- <ion-chip style="font-family: Poppins;" color="tertiary">Gemelos</ion-chip> -->
-      <ion-list *ngFor="let ejercicio of tarjeta.ejercicios">
-        <ion-item>
+      <ion-list >
+        <ion-item *ngFor="let ejercicio of tarjeta.ejercicios">
           <ion-label style="font-size: 17px;font-family: Poppins;">{{ejercicio.nombre}} x{{ejercicio.repeticiones}}</ion-label>
           <ion-item>
-            <ion-checkbox slot="start" [checked]="ejercicio.hecho"></ion-checkbox>
+            <ion-checkbox slot="start" [checked]=""></ion-checkbox>
             <ion-item fill="solid">
               <ion-input type="number" step="any" placeholder="Kg"></ion-input>
               <ion-note slot="error">Valor invalido</ion-note>

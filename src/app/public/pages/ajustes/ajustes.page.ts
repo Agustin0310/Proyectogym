@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UsuariosService } from 'src/app/core/services/usuarios.service';
 
 @Component({
   selector: 'app-ajustes',

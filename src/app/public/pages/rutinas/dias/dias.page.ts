@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouteConfigLoadEnd, RouterLink } from '@angular/router';
-import { EjerciciosService } from 'src/app/core/ejercicios.service';
+import { Rutina } from 'src/app/core/interfaces/rutinas';
+import { EjerciciosService } from 'src/app/core/services/ejercicios.service';
 
 @Component({
   selector: 'app-dias',
@@ -11,34 +12,30 @@ export class DiasPage implements OnInit {
 
   constructor(private ar:ActivatedRoute, private ejerciciosS:EjerciciosService ) { }
 
-  tarjetas = [
+  tarjetas:Rutina[]= [
     {
-      musculos: ["piernas","biceps"],
+      id:0,
+      dia:"",
+ 
+      series:0,
       ejercicios: [
         {
-          nombre: "Sentadilla",
-          repeticiones: 20,
-          hecho: false,
+          id:0,
+          nombre: "",
+          musculo: "",
+          peso:0,
+          explicacion: "" , 
+          repeticiones:0,
+         
         },
         {
-          nombre: "Curl de biceps",
-          repeticiones: 10,
-          hecho: true,
-        }
-      ]
-    },
-    {
-      musculos: ["piernas","biceps"],
-      ejercicios: [
-        {
-          nombre: "B",
-          repeticiones: 5555,
-          hecho: false,
-        },
-        {
-          nombre: "A",
-          repeticiones: 10,
-          hecho: true,
+          id:0,
+          nombre: "",
+          musculo: "",
+          peso:0,
+          explicacion: "" , 
+          repeticiones:0,
+         
         }
       ]
     },
@@ -46,8 +43,7 @@ export class DiasPage implements OnInit {
 
   ngOnInit() {
 
-    this.getRutinas()
-
+    this.getTarjetas();
     this.ar.params.subscribe (
       (route) => {
         if(route.dia === 'lunes')
@@ -62,16 +58,17 @@ export class DiasPage implements OnInit {
         console.log(route)
 
       }
+  
       
-
-
-
       )
-    
+    this.tarjetas
+
+    }
+
+    async getTarjetas(){
+      this.tarjetas = await this.ejerciciosS.getByNombre("lunes")
   }
 
-  async getRutinas(){
-    await this.ejerciciosS.getAll()
-  }
+  
 
 }

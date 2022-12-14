@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { UsuarioJsonPlaceholder } from '../interfaces/usuario';
 
 @Injectable({
   providedIn: 'root'
@@ -6,10 +7,10 @@ import { Injectable } from '@angular/core';
 export class UsuariosService {
 
   constructor() {}
- 
-  async getAll(){
-    const res = await fetch("http://localhost:8080/usuario")
-    console.log(res)
+
+  async getUsuarios(): Promise<UsuarioJsonPlaceholder[]> {
+    const data = await fetch('http://localhost:8080/usuario');
+    return await data.json();
   }
 
   async Register(usuario){
