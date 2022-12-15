@@ -3,7 +3,7 @@
     
     <ion-buttons>
       <ion-menu-button></ion-menu-button>
-      <ion-title style="font-family:Poppins">Sign-in</ion-title> 
+      <ion-title style="font-family:Poppins; ">Sign-in</ion-title> 
     </ion-buttons>
   </ion-toolbar>
   
@@ -13,35 +13,58 @@
 
   <ion-card-header>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <ion-card-title style="font-size: 30px;font-family: Poppins;">Registrarse</ion-card-title>
+    <ion-card-title style="font-size: 30px;font-family: Poppins; text-align: center; font-weight: bolder;color: rgb(0, 0, 0);">REGISTRARSE</ion-card-title>
   </ion-card-header>
   <form (ngSubmit)="guardar()">
   <ion-list role="article" style="margin-top: 5%;">
-    <ion-item style="margin-right: 8%;">
-      <ion-input type="text" placeholder="Nombre" style="font-family:Poppins" name="nombre" [(ngModel)]="usuario.nombre"></ion-input>
+
+    <ion-card-title style="font-size: 15px;font-family: Poppins; text-align: center; font-weight: bolder;color: rgb(0, 0, 0);">Nombre</ion-card-title>
+    <ion-item color="transparent" style=" text-align: center;" lines="none">
+      <ion-input type="text" placeholder="Ingresar nombre" style="font-family:Poppins; color: rgb(255, 255, 255);" name="nombre" [(ngModel)]="usuario.nombre"></ion-input>
     </ion-item>
 
-    <ion-item style="margin-right: 8%;">
-      <ion-input type="text" placeholder="Apellido" style="font-family:Poppins" name="apellido"[(ngModel)]="usuario.apellido"></ion-input>
+    <ion-card-title style="font-size: 15px;font-family: Poppins; text-align: center; font-weight: bolder;color: rgb(0, 0, 0);">Apellido</ion-card-title>
+    <ion-item color="transparent" style=" text-align: center;" lines="none">
+      <ion-input type="text" placeholder="Ingresar apellido" style="font-family:Poppins;color: rgb(255, 255, 255);" name="apellido"[(ngModel)]="usuario.apellido"></ion-input>
     </ion-item>
 
-    <ion-item style="margin-right: 8%;">
-      <ion-input type="number" placeholder="Edad" style="font-family:Poppins" name="edad" [(ngModel)]="usuario.edad"></ion-input>
+
+<ion-card-title style="font-size: 15px;font-family: Poppins; text-align: center; font-weight: bolder;color: rgb(0, 0, 0); margin-right: 2%;">Edad</ion-card-title>
+    <ion-item color="transparent" style=" text-align: center;" lines="none">
+      <ion-input  min="1" type="number" placeholder="Edad" style="font-family:Poppins;color: rgb(255, 255, 255);" name="edad" [(ngModel)]="usuario.edad"></ion-input>
     </ion-item>
 
-    <ion-item style="margin-right: 8%;">
-      <ion-input type="number" placeholder="Teléfono" style="font-family:Poppins" name="telefono" [(ngModel)]="usuario.telefono"></ion-input>
+    <ion-card-title style="font-size: 15px;font-family: Poppins; text-align: center; font-weight: bolder;color: rgb(0, 0, 0);">Teléfono</ion-card-title>
+    <ion-item  color="transparent" style=" text-align: center;" lines="none">
+      <ion-input type="text" placeholder="Ingresar teléfono" style="font-family:Poppins;color: rgb(255, 255, 255);" name="telefono" [(ngModel)]="usuario.telefono"></ion-input>
     </ion-item>
 
-    <ion-item style="margin-right: 8%;">
-      <ion-input type="email" placeholder="Correo" style="font-family:Poppins" name="email" [(ngModel)]="usuario.email"></ion-input>
-    </ion-item>
-  
-    <ion-item style="margin-right: 8%;">
-      <ion-input type="password" placeholder="Contraseña" style="font-family:Poppins" name="password" [(ngModel)]="usuario.password"></ion-input>
+
+    <ion-card-title style="font-size: 15px;font-family: Poppins; text-align: center; font-weight: bolder;color: rgb(0, 0, 0);">Email</ion-card-title>
+    <ion-item color="transparent" style=" text-align: center;" lines="none">
+      <ion-input type="email" placeholder="Ingresar correo" style="font-family:Poppins;color: rgb(255, 255, 255);" name="email" [(ngModel)]="usuario.email"></ion-input>
     </ion-item>
 
-    <ion-button style="margin-left: 40%; margin-right:40%; margin-top: 4%; font-family:Poppins" color="medium" fill="outline" type="submit" >Registrarse</ion-button>
+  <ion-card-title style="font-size: 15px;font-family: Poppins; text-align: center; font-weight: bolder;color: rgb(0, 0, 0);">Contraseña</ion-card-title>
+    <ion-item color="transparent" style=" text-align: center;" lines="none">
+      <ion-input type="password" placeholder="Ingresar contraseña" style="font-family:Poppins;color: rgb(255, 255, 255);" name="password" [(ngModel)]="usuario.password"></ion-input>
+    </ion-item>
+
+
+
+    <div id="sign-up">
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="10" offset="1">
+    
+            <ion-button class="btnsign" color="transparent" expand="full" shape="round" fill="outline" type="submit" >
+              <ion-icon name="person-add-outline" slot="end"></ion-icon>
+              Darme de alta
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div> 
   </ion-list>
 </form>
 </ion-content>
