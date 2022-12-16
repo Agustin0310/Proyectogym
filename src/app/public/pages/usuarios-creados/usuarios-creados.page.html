@@ -1,0 +1,25 @@
+<ion-header>  
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="onClick()">
+        <ion-icon slot="start" name="menu"  style="font-size: 26px"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title style="font-family:Poppins; text-align: center;"></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2 style="font-family: Poppins; text-align: center; margin-bottom: 15px;">Usuarios Creados</h2>
+  
+  <ion-card  *ngFor="let usuario of usuarios; let i = index">
+    <ion-item>
+      <ion-label>
+        <ion-card-header><span>Nombre:</span> {{usuario.nombre}}</ion-card-header>
+        <ion-card-content><span>Apellido:</span> {{usuario.apellido}}</ion-card-content>
+        <ion-card-content><span>Edad:</span> {{usuario.edad}}<span> años</span></ion-card-content>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+  </ion-content>
+  

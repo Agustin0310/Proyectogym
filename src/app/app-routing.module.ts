@@ -26,7 +26,11 @@ const routes: Routes = [
   {
     path: 'signin',
     loadChildren: () => import('./public/pages/signin/signin.module').then( m => m.SigninPageModule)
+  },  {
+    path: 'usuarios-creados',
+    loadChildren: () => import('./public/pages/usuarios-creados/usuarios-creados.module').then( m => m.UsuariosCreadosPageModule)
   },
+
 
 
 

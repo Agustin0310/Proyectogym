@@ -10,6 +10,7 @@ export class AppComponent {
     { title: 'Rutinas', url: '/rutinas', icon: 'barbell'},
     { title: 'Ajustes', url: '/ajustes', icon: 'settings' },
     { title: 'Login', url: '/login', icon: 'finger-print' },
+    { title: 'Nuestros Clientes', url: '/usuarios-creados', icon: 'accessibility'}
   ];
 
 
